@@ -1,0 +1,429 @@
+<!DOCTYPE html> <!-- this states what type of document this is and the version -->
+
+<!-- Every html document should be wrapped on a html tag, this tells the software that everything
+  inside this tag should he handled as html -->
+<html>
+    <!-- All elements that should be displayed either on the page tag or used for SEO -->
+<head>
+    <!-- Title of the page which will be displayed on the page tag as the page name -->
+<title>
+  NH Exteriors - Blog
+</title>
+  <!-- character encoding capable of encoding all characters on the web. -->
+<meta charset="utf-8">
+<!-- SEO strategy, description of the page which will facilitate the search engines to find it
+enter description under content-->
+<meta name="description" content="">
+<!-- keywords will also facilitate search engines to find this page -->
+<meta name="keywords" content="">
+<!-- the viewpoint dictates the view area the user will have, this is adjustable
+  but normally left on scale 1 or 1.0 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- the link tag will hold your page icon, to be display on the page tag, your
+custom fonts, your link to your stylesheet and/or javascript files -->
+<!-- change this logo to your logo -->
+  <link href="./../../house-logo.png" rel="icon" type="image/x-icon" class="icon">
+  <!-- links your html to your regular css file -->
+  <link href="./../../src/stylesheets/styles.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/src/stylesheets/styles.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- font for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font for side menu -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<!-- page scripts, this connect libraries and frameworks to the html. REMOVING THIS WILL BREAK YOUR CODE -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- end of head tag -->
+
+</head>
+<!-- body tag, here are all the tags that will hold the content that will be seen
+  in the page -->
+<body>
+  <header class="header-fixed">
+  <!-- this is the top green navbar with the phone numbers and social media -->
+  <div class="topnavbar">
+    <!-- content that is inside of the top green navigation bar -->
+    <!-- this div contains the phone icon and the clickable phone numbers -->
+    <div class="phone">
+      <!-- green phone icon, refer to styles.scss for styling -->
+      <i style="font-size:24px" class="fa phone-icon">&#xf095;</i>
+      <!-- phone numbers -->
+      <a class="phone-numbers" href="tel:603-210-0128">+1 603-210-0128</a>
+      <!-- this is the separation bar in between the phone numbers -->
+      <strong class="separation-bar"> | </strong>
+      <a class="phone-numbers" href="tel:800-544-3524">+1 800-544-3524</a>
+    </div>
+<!-- end of phone numbers section -->
+
+<!-- this div contains the search bar and seach icon -->
+  <!-- <div class="search-bar"> -->
+    <!-- actual input search bar -->
+    <!-- <form class="form-inline bar"> -->
+      <!-- <input class="form-control form-control-sm mr-3 w-50" type="text" placeholder="Search"
+        aria-label="Search"> -->
+        <!-- this is the search loop icon -->
+      <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+  <!-- </form>
+  </div> -->
+  <!-- end of search bar section-->
+
+<!-- this div contains all the social media icons and links on the top navbar -->
+    <div class="social-media-nav">
+      <!-- actual icons and URL to be redirected to -->
+      <a href="https://www.facebook.com/NH-Exteriors-108208597572594" target="_blank" class="facebook icon"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/nhexteriors/" target="_blank" class="instagram icon"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.pinterest.com/newhampshireexteriors/" target="_blank" class="pinterest icon"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.linkedin.com/company/nh-exteriors/about/?viewAsMember=true" target="_blank" class="linkedin icon"><i class="fa fa-linkedin"></i></a>
+      <!-- <a href="#" target="_blank" class="twitter icon"><i class="fa fa-twitter"></i></a> -->
+      <a href="https://www.youtube.com/channel/UChjsGdvmaZdjJTgSVFCjXWA/?guided_help_flow=5&disable_polymer=true" target="_blank" class="youtube icon"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@nhexteriors?lang=en" target="_blank" class="tiktok icon"><img src="./../../public/tiktok.png" class="tiktok"></a>
+    </div>
+  </div>
+    <!-- end of social media icons section -->
+
+    <!-- beginning of MAIN white navbar -->
+<nav class="navigation">
+    <div class="navbar navbar-expand-lg navbar-light bg-light navbar-blog">
+      <!-- logo on navbar -->
+      <a class="navbar-brand" href="#"><img src="./../../public/main-logo.png" alt="NH Exteriors Logo" class="logo"></a>
+      <!-- hamburger icon when screen is adjusted -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- links on navbar -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="./../../index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="./../About-Us.html">About Us</a>
+          <a class="nav-item nav-link" href="./../Why-Us.html">Why NH Exteriors</a>
+          <a class="nav-item nav-link" href="./../Communities.html">Communities We Serve</a>
+          <a class="nav-item nav-link" href="./../Products.html">Products</a>
+          <a class="nav-item nav-link active" href="./Blog.html">Blog</a>
+          <a class="nav-item nav-link" href="./../Contact.html">Contact Us</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="news-letter-blog">
+      <p class="news-title-blog">BE INFORMED OF OUR LATEST NEWS, SUBSCRIBE TODAY!</p>
+      <div class="input-group-sm w-50 news-input">
+    <input type="text" class="form-control" placeholder="Email Adress" aria-label="Username" aria-describedby="basic-addon1">
+    <button type="button" class="btn btn-warning news-submit-blog">Submit</button>
+  </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- this is the end of both navbars -->
+
+<!-- Carousel # 1 -->
+<div class="blog-space"></div>
+
+<!--/.Navbar-->
+
+<!-- This is the start of the main page content -->
+<main class="main-page">
+
+<!-- Side navigation menu -->
+<section class="container-expand-lg side">
+        <div class="row">
+  <!-- Main Section About Me starts -->
+      <!-- About me Section-->
+      <div class="col-12 col-lg-2 sidemenu sidemenu-blog">
+        <div class="all-items">
+        <ul class="list-bar">
+          <li class="menu-title"><a href="./../About-Us.html">About Us</a></li>
+          <li class="list-item"><a href="./../Mission.html">Mission Statement</a></li>
+          <li class="list-item"><a href="./../History.html">History of the company</a></li>
+          <li class="list-item"><a href="./../Staff.html">Staff</a></li>
+          <li class="list-item"><a href="./../Corporate.html">Corporate Citizenship</a></li>
+          <li class="list-item"><a href="./../Honors.html">Honors/Accolades</a></li>
+        </ul>
+        <!-- Why Us Section-->
+        <ul class="list-bar">
+          <li class="menu-title"><a href="./../Why-Us.html">Why Us?</a></li>
+          <li class="list-item"><a href="./../Warrantees.html">Warrantees / Product Quality</a></li>
+          <li class="list-item"><a href="./../Service.html">Service Department</a></li>
+          <li class="list-item"><a href="./../Experience.html">Experience</a></li>
+        </ul>
+        <!-- Products Section-->
+        <ul class="list-bar">
+          <li class="menu-title"><a href="./../Products.html">Products</a></li>
+          <li class="list-item"><a href="./../Roofing.html">Roofing</a></li>
+          <li class="list-item"><a href="./../Siding.html">Siding</a></li>
+          <li class="list-item"><a href="./../Windows.html">Windows and Shutters</a></li>
+          <li class="list-item"><a href="./../Doors.html">Doors</a></li>
+          <li class="list-item"><a href="./../Mobile.html">Services for Mobile Homes</a></li>
+          <li class="list-item"><a href="./../Misc.html">Misc</a></li>
+        </ul>
+
+        <ul class="list-bar">
+          <li class="menu-title"><a href="./../Testimonials.html">Testimonials</a></li>
+          <li class="list-item"><a href="./../Staff-reviews.html">The Staff</a></li>
+          <li class="list-item"><a href="./../Customers-reviews.html">The Customers</a></li>
+          <li class="list-item"><a href="./../News.html">The News</a></li>
+        </ul>
+        <!-- Other Section-->
+        <ul class="list-bar">
+          <li class="menu-title"><a href="./../Other.html">Other</a></li>
+          <li class="list-item"><a href="./../Financing.html">Financing</a></li>
+          <li class="list-item"><a href="./../Promotions.html">Promotions</a></li>
+          <li class="list-item"><a href="./../Contact.html">Contact Us</a></li>
+          <li class="list-item"><a href="./../Quote.html">Request a Quote</a></li>
+          <li class="list-item"><a href="./../Communities.html">Communities We Serve</a></li>
+
+        </ul>
+      </div>
+
+      <!-- end of side navigation links -->
+
+    </div>
+
+<div class="col-12 col-lg-9 page-main-content-communities content-management overflow-auto">
+
+  <h5 class="communities-title-blog">Blog</h5>
+
+
+  <div class="search-bar-blog">
+    <!-- actual input search bar -->
+    <form class="form-inline bar">
+      <input class="form-control form-control-sm mr-3 w-75" type="text" id="myInput" placeholder="Search"
+        aria-label="Search">
+        <!-- this is the search loop icon -->
+      <i class="fa fa-search" aria-hidden="true"></i>
+  </form>
+  </div>
+
+
+<div class="column">
+</div>
+
+  <div class="row">
+  <div class="container col-lg-12 blog-container1">
+    <a href="./Mission.html">
+    <div class="background-blog">
+    <p class="title-blog">Mission Statement</p>
+    <img src="./../../public/Blog/sunroom.jpg" class="img-blog-box1" alt="Fist Blog Article">
+    <strong class="about-subtitle">"Our Promise to you."</strong>
+
+  </div></a>
+    </div>
+
+    <div class="container col-lg-6 blog-container1">
+      <a href="./History.html">
+      <div class="background-blog-2">
+      <p class="title-about-2">History of the Company</p>
+      <img src="./../public/History.png" class="img-about" alt="History of the company Image Link">
+      <strong class="about-subtitle">"How it all started."</strong>
+    </div></a>
+      </div>
+
+      <div class="container col-lg-6 blog-container1">
+        <a href="./History.html">
+        <div class="background-blog-3">
+        <p class="title-about-2">History of the Company</p>
+        <img src="./../public/History.png" class="img-about" alt="History of the company Image Link">
+        <strong class="about-subtitle">"How it all started."</strong>
+      </div></a>
+        </div>
+    </div>
+
+
+<div class="row">
+
+  <div class="container col-lg-4 blog-container1">
+    <a href="./Corporate.html">
+    <div class="background-blog-4">
+    <p class="title-about">Corporate Citizenship</p>
+    <img src="./../public/citizenship.png" class="img-about" alt="Corporate Citizenship Image Link">
+    <strong class="about-subtitle">"Our role in the Commnunities we Serve"</strong>
+
+  </div></a>
+    </div>
+
+    <div class="container col-lg-4 blog-container1">
+      <a href="./Corporate.html">
+      <div class="background-blog-5">
+      <p class="title-about">Corporate Citizenship</p>
+      <img src="./../public/citizenship.png" class="img-about" alt="Corporate Citizenship Image Link">
+      <strong class="about-subtitle">"Our role in the Commnunities we Serve"</strong>
+
+    </div></a>
+      </div>
+
+      <div class="container col-lg-4 blog-container1">
+        <a href="./Corporate.html">
+        <div class="background-blog-6">
+        <p class="title-about">Corporate Citizenship</p>
+        <img src="./../public/citizenship.png" class="img-about" alt="Corporate Citizenship Image Link">
+        <strong class="about-subtitle">"Our role in the Commnunities we Serve"</strong>
+
+      </div></a>
+        </div>
+
+</div>
+
+
+
+  <div class="col-12 container">
+      <h6 class="communities-title-blog">More Articles</h6>
+<div class="row">
+
+  <div class="container col-lg-6">
+    <ul class="">
+      <li><a class="">Mission Statement</a></li>
+      <li><a class="">History of the Company</a></li>
+      <li><a class="">Corporate Citizenship</a></li>
+      <li><a class="">Honors</a></li>
+      <li><a class="">Staff Members</a></li>
+  </ul>
+
+  </div>
+
+  <div class="container col-lg-6">
+    <ul class="">
+      <li><a class="">Mission Statement</a></li>
+      <li><a class="">History of the Company</a></li>
+      <li><a class="">Corporate Citizenship</a></li>
+      <li><a class="">Honors</a></li>
+      <li><a class="">Staff Members</a></li>
+  </ul>
+
+  </div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+</section>
+  <!-- end of Side navigation section -->
+
+
+  <footer class='footer'>
+    <div class="container-expand-lg">
+            <div class="row">
+                <div class="col-12 col-lg-3 footer-left">
+          <img src="./../../public/main-logo.png" alt="NH Exteriors" class="logo-footer">
+          <p><strong>Presidents Professional Park </strong></p>
+          <p>Washington Building</p>
+          <p>50 Pinewood Rd, Suncook, NH 03275</p>
+
+          <div class="footer-contact">
+
+          <h6>Phone: <a href="tel:603-210-0128">(603) 485-3933</a></h6>
+          <h6>Toll-Free Phone: <a href="tel:800-544-3524">(800) 544-3524</a></h6>
+          <h6>Email:<a href="mailto:sales@nhext.com"> sales@nhext.com</a></h6>
+        </div>
+
+        <div class="contact-us-footer">
+            <a href="./../Contact.html">Contact Us</a>
+            <a href="./../Quote.html">Request Quote</a>
+          </div>
+
+      </div>
+
+      <div class="col-12 col-lg-1">
+        <img src="./../../public/footer-dividor.png" alt="NH Exteriors" class="footer-dividor">
+
+      </div>
+
+      <div class="col-12 col-lg-2 footer-menu-about">
+          <p><strong class="menu-title-footer">About Us</strong></p>
+          <p><strong class="line">____________________________</strong></p>
+            <ul class="">
+              <li class=""><a href="./../About-Us">About Us</a></li>
+              <li class=""><a href="./../Mission.html">Mission Statement</a></li>
+              <li class=""><a href="./../History.html">Company History</a></li>
+              <li class=""><a href="./../Staff.html">Staff</a></li>
+              <li class=""><a href="./../Corporate.html">Corporate Citizenship</a></li>
+              <li class="honors-footer"><a href="./../Honors.html">Honors/Accolades</a></li>
+            </ul>
+
+            <p><strong class="menu-title-footer">Why Us?</strong></p>
+            <p><strong class="line">____________________________</strong></p>
+            <ul class="">
+              <li class=""><a href="./../Why-Us.html">Why Us</a></li>
+              <li class=""><a href="./../Warrantees.html">Warrantees / Product Quality</a></li>
+              <li class=""><a href="./../Service.html">Service Department</a></li>
+              <li class=""><a href="./../Experience.html">Experience</a></li>
+              <li class=""><a href="./../Testimonials.html">Testimonials</a></li>
+            </ul>
+      </div>
+
+      <div class="col-12 col-lg-2 footer-menu-services">
+          <p><strong class="menu-title-footer">Products</strong></p>
+          <p><strong class="line">____________________________</strong></p>
+          <ul class="">
+            <li class=""><a href="./../Products.html">Products</a></li>
+            <li class=""><a href="./../Roofing.html">Roofing</a></li>
+            <li class=""><a href="./../Siding.html">Siding</a></li>
+            <li class=""><a href="./../Windows.html">Windows and Shutters</a></li>
+            <li class=""><a href="./../Doors.html">Doors</a></li>
+            <li class=""><a href="./../Mobile.html">Services to Mobile Homes</a></li>
+            <li class=""><a href="./../Misc.html">Misc</a></li>
+          </ul>
+
+            <p><strong class="menu-title-footer">Other</strong></p>
+            <p><strong class="line">____________________________</strong></p>
+            <ul class="">
+              <li class=""><a href="./../Other.html">Other</a></li>
+              <li class=""><a href="./../Financing.html">Financing</a></li>
+              <li class=""><a href="./../Promotions.html">Promotions</a></li>
+              <li class=""><a href="./../Contact.html">Contact Us</a></li>
+              <li class=""><a href="./../Quote.html">Request a Quote</a></li>
+              <li class=""><a href="./../Communities.html">Sitemap</a></li>
+            </ul>
+      </div>
+
+      <div class="col-12 col-lg-1">
+        <img src="./../../public/footer-dividor-right.png" alt="NH Exteriors" class="footer-dividor">
+
+      </div>
+
+      <div class="col-12 col-lg-3 footer-right">
+        <img src="./../../public/energy.png" alt="NH Exteriors" class="footer-energy">
+        <a id="bbblink" class="ruhzbum" href="https://www.bbb.org/us/nh/suncook/profile/siding-contractors/nh-exteriors-0051-3003390#bbbseal"
+        title="NH Exteriors, Inc. is a BBB Accredited Siding Contractor in Suncook, NH" target="_blank">
+        <img class="img-bbb" id="bbblinkimg" src="https://seal-concord.bbb.org/logo/ruhzbum/nh-exteriors-3003390.png" alt="NH Exteriors, Inc. is a BBB Accredited Siding Contractor in Suncook, NH"/></a>
+        <script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); (function(){var s=document.createElement('script');s.src=bbbprotocol + 'seal-concord.bbb.org' + unescape('%2Flogo%2Fnh-exteriors-3003390.js');s.type='text/javascript';s.async=true;
+        var st=document.getElementsByTagName('script');st=st[st.length-1];var pt=st.parentNode;pt.insertBefore(s,pt.nextSibling);})();</script>
+        <img src="./../../public/epa.png" alt="NH Exteriors" class="footer-epa">
+
+        <div class="social-media-footer">
+          <!-- actual icons and URL to be redirected to -->
+          <a href="https://www.facebook.com/NH-Exteriors-108208597572594" target="_blank" class="facebook icon"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/nhexteriors/" target="_blank" class="instagram icon"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.pinterest.com/newhampshireexteriors/" target="_blank" class="pinterest icon"><i class="fa fa-pinterest"></i></a>
+          <a href="https://www.linkedin.com/company/nh-exteriors/about/?viewAsMember=true" target="_blank" class="linkedin icon"><i class="fa fa-linkedin"></i></a>
+          <!-- <a href="#" target="_blank" class="twitter icon"><i class="fa fa-twitter"></i></a> -->
+          <a href="https://www.youtube.com/channel/UChjsGdvmaZdjJTgSVFCjXWA/?guided_help_flow=5&disable_polymer=true" target="_blank" class="youtube icon"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@nhexteriors?lang=en" target="_blank" class="tiktok icon"><img src="./../../public/tiktok-footer.png" class="tiktok"></a>
+        </div>
+        <p class="footer-text"><a href="https://www.pantlitz.dev/" target="_blank">Copyright</a> 2020 &copy; NH Exteriors |  All rights reserved. </p>
+
+      </div>
+
+            </div>
+          </div>
+      </footer>
+</main>
+
+
+<!-- end of body tag -->
+<script src="./../../src/assets/app.js"></script>
+<script src="/reload/reload.js"></script>
+</body>
+<!-- end of html document -->
+</html>
